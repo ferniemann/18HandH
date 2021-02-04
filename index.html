@@ -79,13 +79,15 @@
                 <p>If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address.</p>
             </div>
             <div class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter email">
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="optional">
-                <input type="button" value="Submit" id="button">
+                <form name="contact" method="POST" data-netlify="true">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                    <label for="message">Message</label>
+                    <textarea id="text_area" type="text" name="message" id="message" placeholder="optional">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
     </main>
